@@ -34,9 +34,11 @@ def main():
                     word_count[word] += 1
             return word_count
 
-    print_words('alice.txt')
+    user_file = input("What is the name of your file? ")
+
+    print_words(user_file)
     print('\n')
-    print_top('alice.txt')
+    print_top(user_file)
 
 if __name__ == "__main__":
     """This is executed when run from the command line"""
