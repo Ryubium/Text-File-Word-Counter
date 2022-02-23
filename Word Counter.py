@@ -19,6 +19,7 @@ def main():
         word_count = {}
         with open(filename, 'r') as file:
             text = file.read()
+            file.close()
             # Cleaning text of punctuation while maintaining word structure
             for char in '".!?-`()[]_:;*':
                 text = text.replace(char, ' ')
